@@ -14,7 +14,7 @@
     "moment-duration-format": "^2.2.2",
     "cpu-stat": "^2.0.1",
     "os": "^0.1.1",
-    "quick.db": "^6.3.2",
+    "quick.db": "^7.0.0-b16",
     "superagent": "^4.0.0",
     "parse-ms": "^2.0.0",
     "quickdb": "^1.0.5",
