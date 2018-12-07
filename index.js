@@ -12,7 +12,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
   if(message.channel.type === "dm") return;
   
-  if(!message.content.startsWith(prefix));
+  if(!message.content.startsWith(prefix)) return;
   let messageArray = message.content.split(" ");
   let args = message.content.slice(prefix.length).trim().split(' ');
   let sender = message.author;
