@@ -17,7 +17,7 @@ module.exports.run = async(client, message, args) => {
   if(!reportsChannel) return message.channel.send("Couldn't find logs Channel.");
   
   message.delete().catch(O_o=>{});
-  reportsChannel.send(ReportEmbed);
+  reportsChannel.send(reportEmbed);
 }
 
 module.exports.help = {
