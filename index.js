@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const client = new Discord.Client();
+const client = new Discord.Client({disableEveryone: true});
 let prefix = 'o!';
 const fs = require("fs");
 
