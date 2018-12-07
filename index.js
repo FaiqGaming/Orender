@@ -5,6 +5,7 @@ const fs = require("fs");
 
 client.on('ready', () => {
   console.log('Ready A Function');
+  client.user.setActivity("Orender | o!help", {type: "WATCHING"});
 });
 
 client.on('message', (message) => {
