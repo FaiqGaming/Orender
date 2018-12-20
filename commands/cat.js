@@ -2,19 +2,18 @@ const Discord = require("discord.js");
 const superagent = require("superagent");
 
 module.exports.run = async(bot, message, args) => {
-  
+ 
   let {body} = await superagent
-  .get('https://random.dog/woof.json');
+  .get('https://aws.random.cat/meow');
   
-  let dogembed = new Discord.RichEmbed()
+  let catembed = new Discord.RichEmbed()
   .setColor('RANDOM')
-  .setTitle('Suprise The Dog!')
-  .setImage(body.url);
+  .setTitle('Suprise The Cat!')
+  .setImage(body.file);
   
-  message.channel.send(dogembed);
-  
+  message.channel.send(catembed);
 }
 
 module.exports.help = {
-  name: "dog"
+  name: "cat"
 }
