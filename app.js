@@ -14,8 +14,8 @@ app.get("/", function (request, response) {
 });
 
 const { ShardingManager } = require('discord.js');
-const Discord = require("discord.js");
 const moment = require("moment-timezone");
+const Discord = require("discord.js");
 const { Client, Util } = require("discord.js");
 const client = new Discord.Client({disableEveryone: true});
 const DBL = require("dblapi.js");
@@ -251,4 +251,5 @@ function play(guild, song) {
 }
 // ============================================================================================================================================
 })
+
 client.login(process.env.TOKEN);
